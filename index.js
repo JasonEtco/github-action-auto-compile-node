@@ -24,7 +24,7 @@ Toolkit.run(async (tools) => {
   tools.log.complete("NPM install run");
 
   const { code } = await require("@zeit/ncc")(
-    path.join(workspace, "index.js"),
+    path.join(workspace, tools.inputs.entrypoint),
     {
       debugLog: true,
     }
