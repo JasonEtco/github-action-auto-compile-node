@@ -41,5 +41,5 @@ jobs:
 - uses: mheap/github-action-auto-compile-node@master
   with:
     # Define a custom entrypoint for your action. Defaults to "index.js"
-    entrypoint: lib/index.js
+    main: lib/index.js
 ```
